@@ -14,7 +14,7 @@
   body {
     background-color: rgb(6, 7, 12);
     font-family: inter;
-    background-image: url(background-img.png);
+    background-image: url(background-im.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -175,3 +175,88 @@
       0 0 200px rgb(6, 7, 12);
   }
   
+/******************************************
+/* ANIMATION
+/*******************************************/
+  @keyframes fadeIn {
+    from{
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    to{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInTop {
+    from{
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes backgroundZoom {
+    from{
+      background-size: 80%;
+    }
+    to{
+      background-size: 100%;
+    }
+  }
+  
+  /* Apply Animations */
+  h1 {
+    animation: fadeIn 1.2s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.2s;
+  }
+  
+  h3 {
+    animation: fadeIn 1.4s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.4s;
+  }
+  
+  p {
+    animation: fadeIn 1.6s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.6s;
+  }
+  button {
+    animation: fadeIn 1.8s ease-out forwards;
+    opacity: 0;
+    animation-delay: 0.8s;
+  }
+  
+  .social-icon {
+    animation: fadeIn 2s ease-out forwards;
+    opacity: 0;
+    animation-delay: 1s;
+  }
+  
+  .nav-item,
+  .left-section {
+    animation: fadeInTop 1s ease-in forwards;
+    opacity: 0;
+  }
+  
+  body {
+    animation: backgroundZoom 3s ease-in forwards;
+  }
+
+/******************************************
+/* RESPONSIVE STYLES
+/*******************************************/
+#responsive-styles {
+  /* Add responsive styles here */
+}
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
